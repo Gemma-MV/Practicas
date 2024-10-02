@@ -3,7 +3,7 @@
     padding: 0;
 }
 header, main{
-    margin: 50px 300px;
+    margin: 50px 250px;
 }
 nav{
     display: flex;
@@ -32,6 +32,7 @@ h1{
     text-align: center;
 }
 .colorGris{
+    width: 75%;
     color: #7A7A7A;
 }
 .anchoMaximo{
@@ -42,8 +43,29 @@ h1{
 h3{
     margin: 20px 0;
 }
-.aside{
-    margin: 0 30px;
+aside{
+    height: 200px;
+    margin: 50px 0 50px 50px;
+    border: 1px solid #7A7A7A;
+    border-radius: 4px;
+}
+h4{
+    padding: 20px;
+    background: #7CCDEC;
+    border-bottom: 1px solid #7A7A7A;
+}
+aside ol{
+    margin: 20px 0 20px 50px;
+}
+aside li{
+    color: #7A7A7A;
+}
+aside a{
+    color: #7A7A7A;
+    text-decoration: none;
+}
+aside a:hover{
+    color: #7CCDEC;
 }
 footer{
     height: 80px;
@@ -57,6 +79,7 @@ footer p{
     margin-left: 20px;
 }
 .barra{
+    width: 20%;
     margin-left: 50px;
     padding: 20px;
     border-right: 2px solid white;
