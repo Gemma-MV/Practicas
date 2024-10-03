@@ -43,6 +43,14 @@ h1{
 h3{
     margin: 20px 0;
 }
+.footerMain{
+    margin-top: 50px;
+    text-align: center;
+}
+.iconoMain{
+    height: 50px;
+    margin: 0 50px;
+}
 aside{
     height: 200px;
     margin: 50px 0 50px 50px;
@@ -67,20 +75,32 @@ aside a{
 aside a:hover{
     color: #7CCDEC;
 }
-footer{
+.pie{
     height: 80px;
     font-size: 1.5em;
     background: #049DD9;
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-footer p{
-    margin-left: 20px;
+.pie p{
+    margin-left: 40px;
+}
+.flex{
+    display: flex;
 }
 .barra{
-    width: 20%;
-    margin-left: 50px;
-    padding: 20px;
+    padding-right: 40px;
     border-right: 2px solid white;
+}
+.div_iconos{
+    margin-right: 40px;
+}
+.iconoFooter{
+    height: 50px;
+    margin-right: 20px;
+}
+.iconoFooter:hover{
+    border: 1px solid rgba(255, 255, 255, 0.26);
 }
