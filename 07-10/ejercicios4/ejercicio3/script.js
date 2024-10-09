@@ -1,5 +1,5 @@
-let num1 = parseFloat(2.5);
-let num2 = parseFloat(8.10);
-
-let suma = num1 + num2;
-let resta = num1 - num2;
+const operaciones = (num1, num2) => {
+    let suma = parseFloat(num1) + parseFloat(num2);
+    let resta = num1 - num2;
+    return [suma, resta];
+};
