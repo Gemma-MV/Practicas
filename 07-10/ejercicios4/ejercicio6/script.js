@@ -1,4 +1,4 @@
-let palabras = ['manzanas', 'peras', 'platanos', 'kiwis', 'cerezas']; 
+let palabras = ['manzanas', 'peras', 'platanos', 'kiwis', 'cerezas', 'albaricoques', 'sandia']; 
 
 function burbuja(palabras) {
     let longitud = palabras.length;
