@@ -1,4 +1,6 @@
+/* Estilos generales */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: rgb(230, 230, 230);
@@ -44,9 +46,37 @@ h1{
 h1::selection, p::selection, h2::selection{
     background: #fc0;
 }
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    width: 90%;
+    text-align: center;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+/* Estilos página Index */
+.centrado{
+    text-align: center;
+}
+.centrado h2{
+    font-size: 1.5em;
+    margin: 50px 0;
+}
+.img_index{
+    height: 450px;
+    width: 800px;
+    margin: 10px 0 40px;
+}
+.img_index:hover{
+    border: 2px solid rgba(230, 230, 230, 0.295);
+    border-radius: 10px;
+}
+/* Estilos página de Biografía */
 .p_cabecera{
     margin: 60px 0;
-    text-align: center;
 }
 .img_europa{
     margin: 0 0 60px;
@@ -81,16 +111,8 @@ h2{
     height: 650px;
     width: 1400px;
 }
-footer{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-}
-footer p{
-    width: 90%;
-    text-align: center;
-    border-top: 1px solid rgb(230, 230, 230);
-}
+
+/* Estilos página Porfolio */
 .enunciado2{
     text-decoration-line: underline;
 }
@@ -109,4 +131,51 @@ footer p{
 video{
     height: 200px;
     width: 300px;
+}
+
+/* Estilos página Contacto */
+form{
+    margin: 20px 23%;
+    padding: 80px 110px;
+    font-size: 1.3em;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #272727;
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 10px 0;
+    height: 30px;
+    width: 100%;
+    color: #fc0;
+    font-size: 0.8em;
+    border: 1px solid gray;
+}
+textarea{
+    height: 200px;
+    padding: 10px;
+    color: #fc0;
+    font-size: 0.8em;
+}
+textarea::placeholder{
+    font-weight: bold;
+}
+.boton{
+    height: 40px;
+    width: 30%;
+    margin: 70px auto 30px;
+    padding: 10px 0;
+    color: rgb(230, 230, 230);
+    border-radius: 8px;
+}
+.boton:hover{
+    color: #fc0;
+    border: 1px solid #fc0;
 }
