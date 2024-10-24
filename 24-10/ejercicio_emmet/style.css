@@ -1,0 +1,17 @@
+.encabezado1{
+    /* Podemos poner la letra c + enter y nos rellenara la etiqueta de color */
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
+.encabezado2{
+    color: #A00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+.texto{
+    color: #00F;
+    background: #CFC;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
