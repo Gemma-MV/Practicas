@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cajaPadre{
+    height: 650px;
+    padding: 50px 300px 70px;
+    background: #dcdfdf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cajaHijo{
+    height: 270px;
+    width: 180px;
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: center;
+}
+.cajaNieto{
+    padding: 10px 0 15px;
+}
+.cajaNieto img{
+    height: 120px;
+    width: 120px;
+    box-shadow: 2px 2px 3px gray;
+    border-radius: 3px;
+}
+.cajaNieto p{
+    color: gray;
+}
