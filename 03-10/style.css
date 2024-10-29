@@ -15,6 +15,7 @@ header{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 .flex{
     display: flex;
@@ -73,9 +74,17 @@ footer p{
 
 /* Estilos página Index */
 .img_inicial{
-    height: 300px;
+    height: 500px;
     width: 100%;
-    background-image: url(img/index.jpg) center center/no-repeat;
+    background: url(img/index.jpg) 100% center/cover no-repeat;
+    position: relative;
+}
+.h1_index{
+    margin: 140px 20%;
+    padding: 80px 80px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 .div_texto{
     margin: 120px 300px 60px;
@@ -120,8 +129,9 @@ footer p{
     width: 40%; 
     border: 2px solid rgba(230, 230, 230, 0.295);
     position: sticky;
-    top: 30px;
+    top: 150px;
     left: 82%;
+    z-index: 1;
 }
 .nav_europa ul{
     padding: 20px 0;
@@ -129,7 +139,7 @@ footer p{
 .nav_europa li{
     padding: 5px 0;
 }
-.nav_europa li:hover{
+.nav_europa li:hover, .nav_europa a:hover{
     color: #fc0;
 }
 .nav_europa p{
@@ -141,6 +151,11 @@ footer p{
 .div_secciones{
     margin-right: 300px;
 }
+.europa{
+    height: 1px;
+    position: absolute;
+    top: 1100px;
+}
 .div_secciones p{
     margin: 20px 150px 20px 0;
 }
@@ -149,7 +164,7 @@ footer p{
     height: 350px;
 }
 h2{
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 2.3em;
 }
 .img_article2{
