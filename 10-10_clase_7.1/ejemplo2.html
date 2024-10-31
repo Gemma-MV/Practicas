@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8" /> 
+        <title>JavaScript</title> 
+        <script language="javascript"> 
+            function ejecutar() { 
+                var parrafoElegido = window.prompt (" Seleccione Párrafo (1,2,3): "); 
+                var parrafo = document.getElementById (parrafoElegido); 
+                document.write (parrafo.innerHTML); // Escribimos directamente dentro del body (hay que usar innerHTML)
+            } 
+        </script> 
+    </head> 
+    <body> 
+        <p id="1"> Primer Párrafo</p> 
+        <p id="2"> Segundo Párrafo</p> 
+        <p id="3"> Tercer Párrafo</p> 
+        <input type="button" value="Ver párrafo" onclick="ejecutar();" /> 
+    </body> 
+</html> 

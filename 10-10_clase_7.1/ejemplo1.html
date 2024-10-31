@@ -1,0 +1,23 @@
+    
+    <!DOCTYPE html> 
+    <html lang="es"> 
+        <head> 
+        <meta charset="UTF-8" /> 
+        <title>JavaScript</title> 
+        <script type="text/javascript"> 
+            var parrafos; 
+            function ejecutar () { 
+                parrafos = document.getElementsByTagName("p"); 
+                for(let i=0; i<parrafos.length; i++) { 
+                    let parrafo = parrafos[i].innerHTML; 
+                    alert (parrafo); 
+                } 
+            } 
+        </script> 
+        </head> 
+        <body> 
+            <p>Este es el primer párrafo</p> 
+            <p>Este es el segundo párrafo</p> 
+            <input type="button" value="Ver párrafos" onclick="ejecutar();" />    
+        </body> 
+    </html>

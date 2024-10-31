@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, main{
+    margin: 50px 250px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.divNav a{
+    margin-right: 20px;
+    color: #023E73;
+    text-decoration: none;
+    font-weight: bold;
+}
+.divNav a:hover{
+    color: #049DD9;
+}
+main{
+    display: flex;
+
+}
+h1, h2{
+    color: #023E73;
+}
+h1{
+    margin-top: 30px;
+    font-size: 3em;
+    text-align: center;
+}
+.colorGris{
+    width: 75%;
+    color: #7A7A7A;
+}
+.anchoMaximo{
+    height: 550px;
+    width: 100%;
+    margin: 20px 0;
+}
+h3{
+    margin: 20px 0;
+}
+.footerMain{
+    margin-top: 50px;
+    text-align: center;
+}
+.iconoMain{
+    height: 50px;
+    margin: 0 50px;
+}
+aside{
+    height: 200px;
+    margin: 50px 0 50px 50px;
+    border: 1px solid #7A7A7A;
+    border-radius: 4px;
+}
+h4{
+    padding: 20px;
+    background: #7CCDEC;
+    border-bottom: 1px solid #7A7A7A;
+}
+aside ol{
+    margin: 20px 0 20px 50px;
+}
+aside li{
+    color: #7A7A7A;
+}
+aside a{
+    color: #7A7A7A;
+    text-decoration: none;
+}
+aside a:hover{
+    color: #7CCDEC;
+}
+.pie{
+    height: 80px;
+    font-size: 1.5em;
+    background: #049DD9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pie p{
+    margin-left: 40px;
+}
+.flex{
+    display: flex;
+}
+.barra{
+    padding-right: 40px;
+    border-right: 2px solid white;
+}
+.div_iconos{
+    margin-right: 40px;
+}
+.iconoFooter{
+    height: 50px;
+    margin-right: 20px;
+}
+.iconoFooter:hover{
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
