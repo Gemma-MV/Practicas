@@ -1,0 +1,35 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0397d6;
+    color: white;
+}
+.img_nav{
+    height: 130px;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    padding: 20px 0;
+    background: #c285e8;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos home */
+main{
+    text-align: center;
+}
+/* .img_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.img_main{
+    height: 500px;
+}
