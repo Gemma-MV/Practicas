@@ -25,11 +25,12 @@ footer p{
 main{
     text-align: center;
 }
-/* .img_flex{
-    display: flex;
+.img_flex{
+    border: none;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-} */
+    align-items: center; */
+}
 .img_main{
     height: 500px;
 }

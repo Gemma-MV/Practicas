@@ -1,5 +1,50 @@
-td{
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#contenedor-principal {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#perro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0; /* Evita que el contenedor del perro cambie de tamaño */
+}
+
+#perro img {
+    order: -1; /* Asegura que la imagen esté encima del botón */
+}
+
+#rejilla {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.casilla {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.casilla img {
+    object-fit: cover;
+}
+
+#contenedor-grafica {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    margin-top: 20px;
 }
