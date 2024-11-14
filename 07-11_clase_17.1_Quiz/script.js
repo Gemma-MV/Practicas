@@ -3,16 +3,32 @@
     localStorage.clear();
 })();
 
-//Aqui ponemos el api que se ejecuta cada vez que invocamos a la funcion cuando pulsamos en el boton.
-const iniciarQuiz = function (){
-    //Esta es la api
-    fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy")
-    //Esto significa que cuando (then) hay datos los guarde en un json. 
-    .then(datos => datos.json()) 
-    .then()
+function crearPregunta(n, texto, pregunta){
+    let preguntaDiv = document.getElementById('question');
+    //preguntaDiv.id ="question"+n;
+    let p = document.createElement('p'); 
+    if(pregunta){
+        p.innerText = `Pregunta ${n}: ${texto}`; 
+    } else{  
+        p.innerText = `Respuesta ${n}: ${texto}`; 
+    }
+    preguntaDiv.appendChild(p);
+
 }
 
-const crearQuestion = (pregunta) => {
-    div.appendChild(img);
-    document.body.appendChild(div);
-}
+//Aqui ponemos el api que se ejecuta cada vez que invocamos a la funcion cuando pulsamos en el boton.
+const iniciarQuiz = function () {
+    fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple")
+    .then(datos => datos.json()) 
+    .then(preguntas => {
+        let listaPreguntas = preguntas.results;
+        listaPreguntas.forEach((pregunta, i) => { 
+            //let usarPregunta = (`Pregunta ${i + 1}: ${pregunta.question}`);
+            crearPregunta((i+1), pregunta.question, true);
+            crearPregunta((i+1), pregunta.correct_answer, false);
+            crearPregunta((i+1), pregunta.incorrect_answers, false);
+            // console.log(`Pregunta ${i + 1}: ${pregunta.question}`); 
+            // console.log(`Respuesta correcta: ${pregunta.correct_answer}`); 
+            // console.log(`Respuestas incorrectas: ${pregunta.incorrect_answers.join(', ')}`);
+    })
+})}
