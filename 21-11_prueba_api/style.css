@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 50px 0;
+    text-align: center;
+}
+.classTienda{
+    background: #dddcdc;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.classDiv{
+    margin: 20px;
+    background: #999999;
+    border: 1px solid gray;
+}
